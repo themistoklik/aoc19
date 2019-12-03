@@ -1,4 +1,4 @@
-#dumb solution for now
+# dumb solution for now
 # notice that bumping position 1 by one for example gives greater increase than position 2
 # we can heuristically binary search based on ^
 
@@ -21,6 +21,7 @@ def calc(opcodes):
 
     return opcodes[0]
 
+
 def solve2():
     target = 19690720
 
@@ -30,6 +31,7 @@ def solve2():
             opcodes[1] = i
             opcodes[2] = j
             if calc(opcodes) == target:
-                return(i,j)
+                return (i, j)
+
 
 print(solve2())
